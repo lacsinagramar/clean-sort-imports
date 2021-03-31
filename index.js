@@ -231,8 +231,8 @@ module.exports = {
                 specifier => specifier.type === 'ImportSpecifier'
               )
               const getSortableName = ignoreCase
-                ? specifier => specifier.local.name.toLowerCase()
-                : specifier => specifier.local.name
+                ? specifier => specifier.local.name
+                : specifier => specifier.local.name.toLowerCase()
               const firstUnsortedIndex = importSpecifiers
                 .map(getSortableName)
                 .findIndex(
