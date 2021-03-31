@@ -171,7 +171,7 @@ module.exports = {
                     previousDeclaration
                   )
 
-                if (ignoreCase) {
+                if (!ignoreCase) {
                   previousLocalMemberName =
                     previousLocalMemberName &&
                     previousLocalMemberName.toLowerCase()
